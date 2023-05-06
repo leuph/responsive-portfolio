@@ -6,6 +6,7 @@
 
 body {
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 h1,
@@ -16,6 +17,29 @@ h3 {
 
 h1 {
   font-size: 95px;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
 }
 
 h2 {
@@ -49,6 +73,10 @@ p {
   text-transform: capitalize;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.primary-link:hover {
   color: white;
 }
 
